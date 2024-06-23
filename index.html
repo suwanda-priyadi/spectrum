@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="SPECTRUM: Sample size calculator for squared multiple correlation">
+        <meta name="keywords" content="sample size, multiple regression, squared multiple correlation, confidence interval">
+        <meta name="author" content="Suwanda Priyadi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SPECTRUM</title>
+        <link rel="stylesheet" type="text/css" href = "stylesheet.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
+        <script type="text/javascript" src="function.js"></script>   
+    </head>
+
+<body>
+    <div style="margin: auto; width: 90%;">
+        <h1 align="center"><a>SPECTRUM: Sample size calculator for squared multiple correlation</a></h1>
+        <form name="ss_reg_dp" class="calc">
+            <fieldset>
+                <!-- input -->
+                <label>Number of predictor variables (<i>k</i>): </label><input name="k" type="number" min="0" max="" step="1"><br />
+                <label>Desired 95% confidence interval width (<i>w</i>): </label><input name="w" type="number" min="0" max="1" step="0.05"><br />
+                <label>Expected value of the squared multiple correlation (adj<i>R<sup>2</sup></i>): </label><input name="R2" type="number" value="" min="0" max="1" step="0.05"><br />
+                <!-- button -->
+                <label><input type="button" value="Calculate" onClick="n1()">
+                    <input type="Reset">
+                </label><br />
+                <!-- result -->
+                <label>Required sample size (<i>n</i>) = </label><input name="n" value="" type="number" readonly><br />
+            </fieldset>
+        </form>        
+        <p><b>References:</b><br />
+            Bonett, D.G., & Wright, T.A. (2011). Sample size requirements for multiple regression interval estimation. <i> Journal of Organizational Behavior, 32</i>(6), 822-830. <a href="https://doi.org/10.1002/job.717">https://doi.org/10.1002/job.717</a></b><br />
+            Bonett, D., & Wright, T. (2014). Sample size planning for multiple correlation: reply to Shieh (2013). <i> Psicothema 26</i>(3), 391-394. <a href="https://doi.org/10.7334/psicothema2013.309">https://doi.org/10.7334/psicothema2013.309</a>
+        </p>
+        <p><b>Citation:</b><br />
+            Priyadi, S. (2024). SPECTRUM: A web-based tool for calculating the required sample size for a squared multiple correlation. <i>Zenodo</i>. <a href="https://doi.org/10.5281/zenodo.12507138">https://doi.org/10.5281/zenodo.12507138</a>
+        </p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+    </div>
+</body>
+
+</html>
